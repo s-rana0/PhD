@@ -1,0 +1,13 @@
+### Files
+
+1. pubmed_result_2019_bestmatch.xlsx : Database containing studies considered for the meta-analysis and whether included in the analysis.
+
+2. MSKCC_PCa_Clinical_Annotation.csv : Additional clinical data for GSE21036 downloaded from https://cbio.mskcc.org/cancergenomics/prostate/data/ .
+
+3. GSE88958_Suer.csv : Additional clinical data for GSE88958 provided directly by the authors of study PMID/ EntrezUID: 30345533. 
+
+4. GSE46738_PSA_data.csv : Additional clinical data for GSE46738 provided directly by the authors of study PMID/ EntrezUID: 25663948.
+
+5. GSE26247_clinical.csv : Additional clinical data for GSE26247 downloaded from the supplementary section of the corresponding study PMID/ EntrezUID: 21703393.
+
+6. GSE26245_clinical.csv : Additional clinical data for GSE26245 downloaded from the supplementary section of the corresponding study PMID/ EntrezUID: 21703393.

@@ -1,0 +1,5 @@
+These files are downloaded from ftp://mirbase.org/pub/mirbase/21/ version miR-21 on 07/11/2017
+
+1. miFam.dat : Contains family membership of miRs. Downloaded from mirbase (ftp://mirbase.org/pub/mirbase/21/).
+
+2. miRBase_miRs.csv : Contains information on miRNA primary transcript and mature miRNA transcript. hsa.gff3 was edited to create this file, which was downloaded from mirbase (ftp://mirbase.org/pub/mirbase/21/genomes/).
