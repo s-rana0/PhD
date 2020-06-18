@@ -1,6 +1,6 @@
 ### Readme
 
-1. mir_metadata.csv : Metadata for the Prostate cancer samples (in gdc_Download_20170213_163009.tar.gz) downloaded from GDC data portal.
+1. mir_metadata.csv : Metadata for the Prostate cancer samples downloaded from GDC data portal.
 
 2. mirbasehuman.csv : Table of mirbase names -  table containing mature miRNA names and accession numbers, from miRbase (mature.fa)
 
