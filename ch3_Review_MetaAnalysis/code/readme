@@ -2,8 +2,5 @@
 
 1. MetaAnalysis_db.R : Script for downloading and preparing datasets for meta-analysis.
 
-2. MetaAnalysis_db.Rdata : Rworkspace with objects created in MetaAnalysis_db.R.
+2. MetaAnalysis_CoxPH.R : Script for performing univariate and multi-variate Cox PH analyses for each study and a Random Effects Model meta-analysis.
 
-3. MetaAnalysis_CoxPH.R : Script for performing univariate and multi-variate Cox PH analyses for each study and a Random Effects Model meta-analysis.
-
-4. MetaAnalysis_CoxPH.Rdata : Rworkspace with objects created in MetaAnalysis_CoxPH.R.
