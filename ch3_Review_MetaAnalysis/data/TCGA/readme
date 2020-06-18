@@ -6,4 +6,3 @@
 
 3. mergeTCGAmaturemirna.R : Code which merges TCGA miRNA expression data. Written by Dr. Gabriel Valbuena (Department of Surgery and Cancer, Imperial College London).
 
-4. gdc_download_20170213_163009.tar.gz : Raw miR expression data (level 1) for prostate cancer (TCGA-PRAD) downloaded from GDC data portal (https://portal.gdc.cancer.gov/).

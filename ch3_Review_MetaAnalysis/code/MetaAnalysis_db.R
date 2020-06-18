@@ -110,7 +110,7 @@ c_patient <- c_patient %>%
   mutate(event_time=c_follow_up$event_time[match(bcr_patient_barcode, c_follow_up$bcr_patient_barcode)])
 
 
-## 6) Now get TCGA expression directly from GDC data portal
+## 6) Now get TCGA expression directly from GDC data portal (requires level 1 data access)
 mir_manifest <- read.table('data/TCGA/gdc_download_20170213_163009/MANIFEST.txt', sep='\t', header=T, stringsAsFactors=F)
 mirbasehuman <- read.csv('data/TCGA/mirbasehuman.csv', stringsAsFactors = F)
 maturemirnacounts <- mergeTCGAmaturemirna(path='data/TCGA/gdc_download_20170213_163009/', mirfileIDs=mir_manifest$id, mirbasenames=mirbasehuman)
