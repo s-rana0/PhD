@@ -660,4 +660,4 @@ for(i in 1:ncol(perm.AUC.df)){
   iterations <- 1000
   p.val <- round(c(p.val, (1+sum(perm.AUC.df[,i]>=actual.AUC.df[i]))/(1+iterations)), 3) # significance test for the AUC we got from actual test is no different than expected by chance
 }
-p.val
+p.val 
