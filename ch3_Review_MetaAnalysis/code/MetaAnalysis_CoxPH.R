@@ -1,3 +1,5 @@
+rm(list=ls())
+
 library(dplyr)
 library(tidyr)
 library(edgeR)
@@ -11,8 +13,8 @@ library(gridExtra)
 library(gplots)
 
 ## Load the prepared dataframes from MetaAnalysis_db.R 
-load('/home/sharmila/Documents/github_projects/ch3_Review_MetaAnalysis/code/MetaAnalysis_db.Rdata')
-keep(TCGA.cox.df, Taylor.cox.df, Leite.cox.df, Suer.cox.df, Long.test.cox.df, Long.train.cox.df, sure=T)
+load('/home/sharmila/Documents/github_projects_with_data/ch3_Review_MetaAnalysis/code/MetaAnalysis_CoxPH.Rdata')
+# keep(TCGA.cox.df, Taylor.cox.df, Leite.cox.df, Suer.cox.df, Long.test.cox.df, Long.train.cox.df, sure=T)
 
 
 ############################
@@ -904,7 +906,7 @@ intersect(SE.miRs, intersect(sig.ME.uni, sig.ME.multi))
 ####################################################
 ##### Separate forest plots for SE miRs in MA ######
 ###  Ind miRs
-ind <- grep('let-7b-5p|miR-141-3p|miR-145-5p|miR-152-3p|miR-182-5p|miR-195-5p|miR-205-5p', common.miRs.multi, ignore.case = T, value=T)
+ind <- grep('let-7b-5p|miR-145-5p|miR-152-3p|miR-195-5p|miR-224-5p', common.miRs.multi, ignore.case = T, value=T)
 
 pdf('results/figures/REM_multi_200605_SA.pdf', height=4, width=6.5)
 par(mar=c(4.5,4,0,2))
