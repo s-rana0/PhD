@@ -270,7 +270,7 @@ c_patient <- c_patient %>%
 
 
 ## 6) Upload corresponding pheno metadata of maturemirnacounts
-pheno_manifest <- read.csv('/home/sharmila/Documents/github_projects/ch3_Review_MetaAnalysis/data/TCGA/mir_metadata.csv', check.names=F, stringsAsFactors=F)
+pheno_manifest <- read.csv('../ch3_Review_MetaAnalysis/data/TCGA/mir_metadata.csv', check.names=F, stringsAsFactors=F)
 # Select and rename useful columns
 pheno_manifest <- pheno_manifest[,c(23,32,90,97,93)]
 colnames(pheno_manifest) <- c('file_id.isomir', 'file_id.maturemirna', 'submitter_id', 'sample_type','is_ffpe')
@@ -606,7 +606,7 @@ n=length(EN.res.wt.mean); qual_col_pals = brewer.pal.info[brewer.pal.info$catego
 col_vector <- unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 
 ## Plot ROC curves pROC
-pdf('Documents/github_projects_with_data/ch4_PrognosticModels/results/EN_wt_pAUC.pdf', height=5, width=6)
+pdf('results/EN_wt_pAUC.pdf', height=5, width=6)
 
 for (i in 1:length(EN.res.wt.mean)){
   plot(EN.res.wt.mean[[i]]$test$ROC.pROC, print.thres='no',  print.auc=T, print.auc.y=0.1, print.auc.x=0.3, print.auc.cex=1.4, type='S', col=col_vector[6], lwd=2, xlim=c(1,0), legacy.axes=T, cex.main=1.4,cex.lab=1.4,cex.axis=1.4) #  main=names(EN.res.wt.mean)[[i]],
